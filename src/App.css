@@ -1,38 +1,143 @@
-.App {
+.details-container {
+  min-width: 1024px;
+  min-height: 1350px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 5% 50% 20%;
+}
+
+.details-content-group {
+  border: thin solid rgb(161, 161, 161);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 5px;
+  box-shadow: 4px 5px #b3b3b3;
+}
+
+.details-title {
   text-align: center;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stu-input-group {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stu-input-group h2 {
+  margin-left: 5%;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stu-input-group input {
+  width: 80%;
+  margin-left: 5%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+
+.stu-input-group input:focus {
+  border-bottom: 2px solid rgb(81, 142, 255) !important;
+}
+
+.stu-input-group select {
+  width: 80%;
+  margin-left: 5%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+
+.label span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.stu-ctn-btn {
+  width: 83%;
+  height: 30px;
+  background-color: rgb(0, 102, 255);
   color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin: 290px 0 0 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.course-back-btn {
+  width: 35%;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin: 50px 0 0 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-ctn-btn {  
+  width: 35%;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin: 50px 0 0 3%;
+}
+
+.validation-error {
+  margin: 20px 0 0 5%;
+  height: 20px;
+  color: rgb(196, 0, 59);
+}
+
+.schedule-btn-group {
+  display: inline-block;
+  margin: 0 0 0 5%;
+}
+
+.schedule-btn {
+  background-color: rgb(208, 241, 255);
+  border: thin solid;
+  border-radius: 5px;
+  min-width: 120px;
+  height: 30px;
+}
+
+.confirm-details {
+  margin: 0 0 0 5%;
+}
+
+.confirm-course-details {
+  margin: 0 0 0 5%;
+  border: thin solid black;
+  padding: 10px;
+  width: 80%;
+}
+
+.course-input-group {
+  margin-top: 30px;
+}
+
+.confirm-msg {
+  margin-top: 200px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.confirm-back-btn {
+  width: 80%;
+  display: inline-block;
+  height: 30px;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin: 50px 0 0 10%;
 }
